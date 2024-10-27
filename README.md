@@ -92,7 +92,6 @@ This project is a PHP library designed to create and manage type aliases, making
 
 Feel free to explore and contribute!
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
@@ -101,7 +100,6 @@ Feel free to explore and contribute!
 * [PHP](https://www.php.net/)
 * [Composer](https://getcomposer.org/)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
@@ -145,7 +143,6 @@ Before you begin, ensure you have the following installed:
    composer install
    ```
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 ## Basic Setup
