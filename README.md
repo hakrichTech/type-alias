@@ -1,6 +1,6 @@
 <div id="top"></div>
 <!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
+*** Thanks for checking out the Type Alias Manager. If you have a suggestion
 *** that would make this better, please fork the repo and create a pull request
 *** or simply open an issue with the tag "enhancement".
 *** Don't forget to give the project a star!
@@ -29,23 +29,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/hakrichTech/type-alias">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">PHPShots/Common [Type Alias Manager]</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    A common library for managing type aliases in PHP.
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/hakrichTech/type-alias"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="https://github.com/hakrichTech/type-alias">View Demo</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="https://github.com/hakrichTech/type-alias/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/hakrichTech/type-alias/issues">Request Feature</a>
   </p>
 </div>
 
@@ -68,7 +68,6 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -82,18 +81,16 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<!-- [![Product Name Screen Shot][product-screenshot]](https://hkmcode.com/type-aliase) -->
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+This project is a PHP library designed to create and manage type aliases, making code more readable and maintainable. Type aliases can simplify complex type definitions and enhance the developer experience.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+### Why Use Type Alias?
+* Improves code clarity and reduces redundancy.
+* Makes collaboration easier by standardizing types.
+* Enhances type safety in your applications.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
+Feel free to explore and contribute!
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -101,83 +98,156 @@ Use the `BLANK_README.md` to get started.
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-* [Next.js](https://nextjs.org/)
-* [React.js](https://reactjs.org/)
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+* [PHP](https://www.php.net/)
+* [Composer](https://getcomposer.org/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+
 
 
 
 <!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Follow these steps to set up and start using the Type Alias library in your PHP project.
+
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+Before you begin, ensure you have the following installed:
+
+- PHP (version 8.2 or higher)
   ```sh
-  npm install npm@latest -g
+  apt install php
   ```
+- Composer (for dependency management)
+  ```sh
+    apt install composer
+    ```
+
+
+
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+1. **Clone the Repository**: Start by cloning the repository to your local machine:
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   ```bash
+   git clone https://github.com/hakrichTech/type-alias.git
    ```
-3. Install NPM packages
+2. Navigate to the Project Directory
    ```sh
-   npm install
+   cd type-alias
    ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+3. **Install Dependencies**: Use Composer to   install the required dependencies:
+   ```sh
+   composer install
    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
+## Basic Setup
 
-<!-- USAGE EXAMPLES -->
-## Usage
+1. **Include the Library**: In your PHP script, include the Composer autoload file to access the Type Alias library:
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+    ```php
+    require 'vendor/autoload.php'; // Adjust the path as necessary
+    ```
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+2. **Using the Type Alias Library**: Start using the library by creating type aliases. Here’s a basic example:
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+    ```php
+    use PHPShots\Common\TypeAlias;
 
+    // Create an instance of TypeAlias
+    $typeAlias = new TypeAlias;
 
+    // Create a type alias
+    $typeAlias->alias('MyAlias', 'OriginalType');
+
+    // Example of an original type
+    class OriginalType {
+        public function sayHello(string $type) {
+            return "Hello from $type!";
+        }
+    }
+
+    // Instantiate using the alias
+    $myVariable = new MyAlias();
+    echo $myVariable->sayHello($typeAlias->getAlias('MyAlias')); // Outputs: Hello from OriginalType!
+    ```
+  - **isAlias**: Checks if a name is already an alias.
+
+    ```php
+      // Check if a name is an alias
+      if ($typeAlias->isAlias('MyAlias')) {
+          echo "MyAlias is an OriginalType.\n";
+      }
+    ```
+  - **removeAbstractAlias**: Removes a specific alias from the abstract and aliases list.
+
+    ```php
+    // Remove an alias
+    $typeAlias->removeAbstractAlias('MyAlias');
+    ```
+  - **getAlias**: Gets the ultimate alias for an abstract type, following any alias chain.
+
+    ```php
+    // Retrieve the ultimate alias
+    echo "Ultimate alias for MyAlias: " . $typeAlias->getAlias('MyAlias') . "\n";
+    ```
+
+  - **alias**: Adds an alias for an abstract type, with checks to prevent self-aliasing.
+    
+    ```php
+    // Register some aliases
+    $typeAlias->alias('SomeClass', 'Alias1');
+    $typeAlias->alias('Alias1', 'Alias2'); // chaining alias
+    ```
+
+  - **aliasReverse**: Provides an alternative alias method with reversed parameter order.
+
+    ```php
+    // Register some aliases in reversed order
+    $typeAlias->alias('Alias1', 'SomeClass');
+    $typeAlias->alias('Alias2', 'Alias1'); // chaining alias
+    ```
+
+  - **getAllAliases**: Returns all aliases for a given abstract.
+    
+    ```php
+    // List all aliases for a type
+    print_r($typeAlias->getAllAliases('SomeClass'));
+    ```
+  - **clearAliases**: Clears all aliases at once.
+    ```php
+    // Clear all aliases
+    $typeAlias->clearAliases();
+    ```
+  - **getAliasMap**: Returns the entire alias map for quick inspection.
+
+    ```php
+    // Display all direct mappings
+    print_r($typeAlias->getAliasMap());  
+    ```
+
+  - **hasAbstract**: Checks if an abstract type has any associated aliases.
+
+    ```php
+    // Check for aliases of an abstract type
+    echo $typeAlias->hasAbstract('SomeClass') ? "SomeClass has aliases.\n" : "No aliases for SomeClass.\n";
+
+    ```
 
 <!-- ROADMAP -->
 ## Roadmap
 
 - [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
+- [x] Add additional features and methods
+- [ ] Improve documentation
+- [ ] Implement unit tests
 
 
 <!-- CONTRIBUTING -->
@@ -194,7 +264,6 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
@@ -203,18 +272,14 @@ Don't forget to give the project a star! Thanks again!
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Shamavu Rasheed - [@hakeem-shamavu](www.linkedin.com/in/hakeem-shamavu) - shamavurasheed@gmail.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Project Link: [https://github.com/hakrichTech/type-alias](https://github.com/hakrichTech/type-alias)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
@@ -239,15 +304,15 @@ Use this space to list resources you find helpful and would like to give credit 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
+[contributors-url]: https://github.com/hakrichTech/type-alias/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[forks-url]: https://github.com/hakrichTech/type-alias/network/members
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[stars-url]: https://github.com/hakrichTech/type-alias/stargazers
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[issues-url]: https://github.com/hakrichTech/type-alias/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[license-url]: https://github.com/hakrichTech/type-alias/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew
 [product-screenshot]: images/screenshot.png

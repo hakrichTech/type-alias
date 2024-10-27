@@ -1,0 +1,36 @@
+{
+    "name": "phpshots/common-type-alias",
+    "description": "A common library for PHPShots applications providing type alias management functionality.",
+    "type": "library",
+    "keywords": ["php", "library", "type alias", "management", "utilities", "PHPShots"],
+    "homepage": "https://github.com/PHPShots/common",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hakeem Shamavu",
+            "email": "shamavurasheed@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4" 
+    },
+    "autoload": {
+        "psr-4": {
+            "PHPShots\\Common\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PHPShots\\Common\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit" 
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
+}
