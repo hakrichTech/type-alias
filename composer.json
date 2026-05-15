@@ -5,6 +5,7 @@
     "keywords": ["php", "library", "type alias", "management", "utilities", "PHPShots"],
     "homepage": "https://github.com/PHPShots/common",
     "license": "MIT",
+    "version": "v0.1.1",
     "authors": [
         {
             "name": "Hakeem Shamavu",
